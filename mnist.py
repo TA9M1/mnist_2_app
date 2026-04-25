@@ -24,7 +24,11 @@ app.secret_key = "aidemy" # flashメッセージ表示に必要
 def allowed_file(filename):
     return '.' in filename and filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS
 
-model = load_model('./model.keras')
+try:
+    model = load_model('./model.keras')
+except Exception:
+    # モデルの構造定義に不整合があっても、コンパイル設定を無視して読み込む
+    model = load_model('./model.keras', compile=False)
 
 @app.route('/', methods=['GET', 'POST'])
 def upload_file():
