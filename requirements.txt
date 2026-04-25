@@ -15,7 +15,6 @@ html5lib
 itsdangerous
 idna
 Jinja2
-Keras>=3.14.0
 line-bot-sdk
 Markdown
 MarkupSafe
