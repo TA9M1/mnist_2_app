@@ -27,7 +27,7 @@ requests
 six
 tensorboard
 tensorboard-data-server
-tensorflow-cpu>=2.16.1
+tensorflow-cpu==2.15.0
 termcolor
 urllib3
 Werkzeug
