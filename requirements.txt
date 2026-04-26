@@ -15,7 +15,7 @@ html5lib
 itsdangerous
 idna
 Jinja2
-Keras
+Keras>=3.0.0
 line-bot-sdk
 Markdown
 MarkupSafe
@@ -27,7 +27,7 @@ requests
 six
 tensorboard
 tensorboard-data-server
-tensorflow-cpu==2.15.0
+tensorflow-cpu>==2.16.1
 termcolor
 urllib3
 Werkzeug
